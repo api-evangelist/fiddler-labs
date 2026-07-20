@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/api/rest-api/rest-api
+docs: https://docs.fiddler.ai/developers/python-client-guides/installation-and-setup
+summary:
+  types:
+  - http
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  token_prefix: fid_
+  location: header
+  header: Authorization
+  header_format: 'Authorization: Bearer [example key]'
+  description: >-
+    All Fiddler REST API and MCP requests authenticate with a Bearer access key
+    (token prefix `fid_`) passed in the Authorization header. Keys are created
+    and managed under Settings > Credentials (Users & Access Keys). Access is
+    governed by role-based access control (RBAC). The Python client accepts the
+    same token via its connection setup.
+  sources:
+  - docs.fiddler.ai/api/rest-api/rest-api
+rbac: true
+notes: >-
+  No OAuth2 or OpenID Connect flows are documented; authentication is a
+  long-lived Bearer access key. There is no OpenAPI spec published publicly, so
+  this profile is derived from the REST API and client documentation rather than
+  a machine-readable securityScheme.
