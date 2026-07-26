@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: probed
+source: live probe 2026-07-19
+hosts:
+- host: https://www.fiddler.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://docs.fiddler.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://app.fiddler.ai
+  note: >-
+    Per-customer deployment host; did not resolve from the probe network
+    (Fiddler serves customers on dedicated cluster hostnames), so .well-known
+    endpoints could not be probed.
+notes: >-
+  No /.well-known discovery documents were found on the public www or docs hosts.
+  Absence is valid, recorded data. No WellKnown or SecurityTxt pointer is wired
+  because no document returned 200.

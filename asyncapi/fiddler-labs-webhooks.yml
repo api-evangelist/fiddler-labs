@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/integrations/monitoring-and-alerting/monitoring-alerting
+type: Webhooks
+direction: outbound
+description: >-
+  Fiddler emits outbound alert notifications when alert rules trigger. Alert
+  rules can route notifications through email, generic webhooks (for custom
+  integrations, including Slack incoming webhooks), and PagerDuty services.
+  Notifications can be bundled into reusable "notification packs" combining
+  email, PagerDuty, and webhook (UUID) targets, and applied to alert rules with
+  configurable severity levels.
+channels:
+- name: alert-notification
+  transport: webhook
+  trigger: Alert rule condition met (monitoring / GenAI / drift / integrity / performance).
+  targets:
+  - email
+  - webhook
+  - pagerduty
+  - slack (via incoming webhook)
+docs:
+- https://docs.fiddler.ai/integrations/monitoring-and-alerting/monitoring-alerting
+- https://docs.fiddler.ai/integrations/monitoring-and-alerting/monitoring-alerting/pagerduty
+setup_note: >-
+  Webhook, Slack, and PagerDuty targets must be pre-configured by a Fiddler
+  administrator under the Webhook Integration settings before use in alert rules.
+asyncapi_spec: null
+notes: >-
+  This is an outbound notification/webhook surface, not an inbound event stream;
+  no machine-readable AsyncAPI document is published, so no AsyncAPI spec is
+  captured. Emitted as a Webhooks surface only.

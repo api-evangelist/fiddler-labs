@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+status: published
+source: https://docs.fiddler.ai/integrations/agentic-ai-and-llm-frameworks/agentic-ai/mcp-server
+server:
+  name: fiddler-genai
+  transport: http
+  url_template: https://<your-fiddler-url>/v1/mcp/genai/
+  hosted: true
+  note: >-
+    Fiddler is deployed per-customer, so the MCP server URL is relative to your
+    Fiddler deployment host (e.g. https://<your-fiddler-url>/v1/mcp/genai/). It
+    exposes GenAI and agentic observability data to any MCP-compatible client
+    (Claude, Cursor, VS Code, Windsurf, etc.). ML model monitoring tools are not
+    available through MCP.
+authentication:
+  type: bearer
+  description: Fiddler API key (Bearer token) from Settings > Credentials; access governed by RBAC.
+rate_limit: 120 requests per minute per API key
+tool_groups:
+- name: genai
+  access: read
+  domains:
+  - Projects & Apps
+  - Evaluators & Rules
+  - Traces & Sessions
+  - Charts & Dashboards
+  - Alerts
+  - Metrics
+  - LLM Gateway
+  - Experiments
+  - Attributes & Annotations
+  - Backfills
+- name: genai-experimental
+  access: write
+  opt_in: true
+  description: >-
+    Opt-in write access for creating, updating, and deleting resources across
+    the same GenAI domains as the genai tool group.

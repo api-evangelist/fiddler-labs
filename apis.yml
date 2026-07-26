@@ -1,8 +1,18 @@
 aid: fiddler-labs
 name: Fiddler Labs
-description: Fiddler Labs is a company surfaced as a portfolio company of bloomberg-beta and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Fiddler Labs (Fiddler AI) is an enterprise AI Observability and Security
+  platform that provides unified visibility, context, and control across AI
+  agents, LLM and GenAI applications, and traditional ML models. The Fiddler
+  platform delivers standardized telemetry, evaluation, continuous monitoring,
+  real-time guardrails, and auditable governance from development through
+  production. Developers integrate through a REST API (v3), an official Python
+  client (fiddler-client), framework SDKs (LangChain, LangGraph, OpenTelemetry,
+  Google ADK, Strands, Evals), and a hosted Model Context Protocol (MCP) server
+  that exposes GenAI observability data to AI assistants. Capabilities include
+  model and application onboarding, production event ingestion, drift and
+  integrity detection, custom metrics, segments, alerting, explainability, LLM
+  gateway routing, and trace/span-level agentic observability.
 url: https://raw.githubusercontent.com/api-evangelist/fiddler-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,17 +20,115 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://www.fiddler.ai/favicon.ico
 tags:
 - Company
-apis: []
+- AI Observability
+- ML Monitoring
+- LLM Observability
+- Agentic AI
+- AI Security
+- AI Governance
+- Model Monitoring
+- Explainability
+- Guardrails
+apis:
+- name: Fiddler REST API
+  description: >-
+    The Fiddler REST API (v3) is organized around resource-oriented URLs with
+    JSON request/response bodies, Bearer-token authentication, and standard HTTP
+    verbs and status codes. Resource groups include Projects, Models,
+    Applications, Events, Spans, Jobs, Baselines, Segments, Custom Metrics,
+    Alert Rules, Environments, Explainability, Evals & Evaluators, Experiments,
+    Queries, FQL Expressions, LLM Gateway, File Upload, and Users & Access Keys.
+  humanURL: https://docs.fiddler.ai/api
+  baseURL: https://app.fiddler.ai/v3
+  properties:
+  - type: Documentation
+    url: https://docs.fiddler.ai/api
+  - type: APIReference
+    url: https://docs.fiddler.ai/api/rest-api/rest-api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/fiddler-labs-trust-center.yml
+- type: DomainSecurity
+  url: security/fiddler-labs-domain-security.yml
 - type: Website
   url: https://www.fiddler.ai/
+- type: DeveloperPortal
+  url: https://docs.fiddler.ai/
+- type: Documentation
+  url: https://docs.fiddler.ai/
+- type: APIReference
+  url: https://docs.fiddler.ai/api
+- type: GettingStarted
+  url: https://docs.fiddler.ai/first-steps/getting-started-with-agentic-monitoring
+- type: Blog
+  url: https://www.fiddler.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/fiddler-labs
+- type: Pricing
+  url: https://www.fiddler.ai/pricing
+- type: SignUp
+  url: https://www.fiddler.ai/trial
+- type: TermsOfService
+  url: https://www.fiddler.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.fiddler.ai/privacy-policy
+- type: Security
+  url: https://www.fiddler.ai/security
+- type: Compliance
+  url: https://www.fiddler.ai/security
+- type: Authentication
+  url: authentication/fiddler-labs-authentication.yml
+- type: Conventions
+  url: conventions/fiddler-labs-conventions.yml
+- type: RateLimits
+  url: rate-limits/fiddler-labs-rate-limits.yml
+- type: Lifecycle
+  url: lifecycle/fiddler-labs-lifecycle.yml
+- type: Deprecation
+  url: https://docs.fiddler.ai/changelog
+- type: ChangeLog
+  url: changelog/fiddler-labs-changelog.yml
+- type: ErrorCatalog
+  url: errors/fiddler-labs-error-codes.yml
+- type: Conformance
+  url: conformance/fiddler-labs-conformance.yml
+- type: Packages
+  url: packages/fiddler-labs-packages.yml
+- type: SDKs
+  url: packages/fiddler-labs-packages.yml
+- type: MCPServer
+  url: mcp/fiddler-labs-mcp.yml
+- type: LLMsTxt
+  url: llms/fiddler-labs-llms.txt
+- type: Sandbox
+  url: sandbox/fiddler-labs-sandbox.yml
+- type: Webhooks
+  url: asyncapi/fiddler-labs-webhooks.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

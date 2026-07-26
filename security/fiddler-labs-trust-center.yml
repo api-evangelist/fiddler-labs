@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://www.fiddler.ai/security
+url: https://www.fiddler.ai/security
+certifications:
+- SOC 2
+- HIPAA
+evidence:
+- source: https://www.fiddler.ai/security
+  keywords:
+  - soc 2
+  - soc2
+  - hipaa
+  - trust center

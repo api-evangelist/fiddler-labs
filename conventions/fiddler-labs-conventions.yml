@@ -1,0 +1,59 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/api/rest-api/rest-api
+authentication:
+  style: bearer
+  header: 'Authorization: Bearer fid_...'
+  ref: authentication/fiddler-labs-authentication.yml
+versioning:
+  api_version_field: '3.0'
+  path_scheme: uri-path
+  path_example: /v3/events
+  platform_release_scheme: date-based YY.WW (e.g. 26.14 = 2026 week 14)
+  ref: lifecycle/fiddler-labs-lifecycle.yml
+content_type: application/json
+response_envelope:
+  fields:
+  - api_version
+  - kind
+  - data
+  kind_values:
+  - NORMAL
+  - PAGINATED
+  - ERROR
+pagination:
+  style: offset
+  response_fields:
+  - page_size
+  - item_count
+  - total
+  - page_count
+  - page_index
+  - offset
+  - items
+  params:
+  - page_size
+  - offset
+error_envelope:
+  kind: ERROR
+  fields:
+  - code
+  - message
+  - errors
+  errors_item_fields:
+  - reason
+  - message
+  - help
+  rfc9457: false
+  note: Custom error envelope; not RFC 9457 application/problem+json.
+  ref: errors/fiddler-labs-error-codes.yml
+rate_limit_signaling:
+  headers:
+  - X-RateLimit-Limit
+  - X-RateLimit-Remaining
+  - X-RateLimit-Reset
+  - Retry-After
+  ref: rate-limits/fiddler-labs-rate-limits.yml
+idempotency:
+  supported: false
+  note: Idempotency keys are not documented in the Fiddler REST API.

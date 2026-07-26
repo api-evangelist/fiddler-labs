@@ -1,0 +1,47 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/api/rest-api/rest-api
+format: custom-envelope
+rfc9457: false
+envelope:
+  kind: ERROR
+  fields:
+  - name: api_version
+    description: API version identifier (e.g. "3.0").
+  - name: kind
+    description: Response classification; ERROR for error responses.
+  - name: code
+    description: HTTP status code (e.g. 404).
+  - name: message
+    description: Human-readable summary of the error.
+  - name: errors
+    description: Array of individual issue details.
+    item_fields:
+    - reason
+    - message
+    - help
+statuses:
+- status: 400
+  title: Bad Request
+  meaning: Malformed request or invalid parameters.
+- status: 401
+  title: Unauthorized
+  meaning: Missing or invalid Bearer access key.
+- status: 403
+  title: Forbidden
+  meaning: Authenticated but not permitted by RBAC for the resource.
+- status: 404
+  title: Not Found
+  meaning: Requested resource does not exist.
+- status: 429
+  title: Too Many Requests
+  meaning: Rate limit exceeded; see Retry-After header.
+- status: 500
+  title: Internal Server Error
+  meaning: Unexpected server-side error.
+notes: >-
+  Fiddler does not publish a machine-readable OpenAPI spec or an enumerated
+  application-level error-code registry publicly. This catalog captures the
+  documented error envelope shape and the standard HTTP status codes the REST
+  API returns; specific per-endpoint error reasons are surfaced in the `errors[]`
+  array at runtime.

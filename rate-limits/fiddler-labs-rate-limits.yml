@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/integrations/agentic-ai-and-llm-frameworks/agentic-ai/mcp-server
+signaling:
+  headers:
+  - X-RateLimit-Limit
+  - X-RateLimit-Remaining
+  - X-RateLimit-Reset
+  - Retry-After
+  status_on_exceed: 429
+limits:
+- surface: MCP server
+  limit_count: 120
+  window: minute
+  scope: per API key
+  source: https://docs.fiddler.ai/integrations/agentic-ai-and-llm-frameworks/agentic-ai/mcp-server
+- surface: Guardrails free trial
+  limit_count: 200
+  window: day
+  scope: per model per day
+  source: https://www.fiddler.ai/trial
+notes: >-
+  The core REST API signals rate limits via standard X-RateLimit-* headers and
+  returns HTTP 429 with Retry-After when exceeded. Published numeric limits are
+  documented for the MCP server (120 req/min per API key) and the 14-day
+  Guardrails free trial (200 API requests per model per day). Production REST API
+  quotas depend on the customer deployment.

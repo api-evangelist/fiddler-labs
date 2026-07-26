@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.fiddler.ai/trial
+trial:
+  name: Fiddler Guardrails Free Trial
+  url: https://www.fiddler.ai/trial
+  duration_days: 14
+  quota: 200 API requests per model per day
+  scope: >-
+    Test Fiddler Guardrails against hallucinations, toxic content, and prompt
+    injection attacks.
+demo:
+  url: https://www.fiddler.ai/demo
+  note: Guided product demo / request-a-demo for the full platform.
+test_credentials:
+  published: false
+  note: >-
+    Fiddler does not publish static magic test values (test cards, test tokens,
+    or fixed sandbox identifiers). Sandboxing is via the time-boxed free trial
+    and per-customer deployments; no verbatim test credentials to capture.
+notes: >-
+  Fiddler is deployed per-customer, so there is no shared public sandbox host;
+  the free trial provides a bounded environment to exercise the Guardrails API.

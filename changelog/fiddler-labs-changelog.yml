@@ -1,0 +1,44 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/changelog/product-releases
+scheme: date-based YY.WW (year.week)
+current_version: '26.14'
+docs: https://docs.fiddler.ai/changelog
+entries:
+- version: '26.14'
+  date: '2026-07-14'
+  breaking: false
+  highlights:
+  - Sensitive Information guardrail now ships with a curated default PII entity set.
+- version: '26.13'
+  date: '2026-06-30'
+  breaking: false
+  highlights:
+  - Explorer displays span events and links.
+  - GenAI trace TTL configurable via Config Manager API.
+- version: '26.12'
+  date: '2026-06-16'
+  breaking: false
+  highlights:
+  - Bulk trace/session deletion for GenAI apps.
+  - Complete span attributes in single-trace view.
+- version: '26.11'
+  date: '2026-06-02'
+  breaking: false
+  deprecations:
+  - Model.publish() deprecated; use Model.publish_stream() or Model.publish_batch().
+  highlights:
+  - Enhanced Trace Explorer filtering.
+  - Long-running jobs alerts.
+  - Pydantic v2 migration.
+- version: '26.10'
+  date: '2026-05-19'
+  breaking: false
+  highlights:
+  - Fiddler Trust Models rebranded as "Centor Models".
+  - RCA column filtering.
+  - Org Admin implicit project access.
+notes: >-
+  Fiddler maintains separate dated changelogs for the platform (Product Releases)
+  and each SDK (Python client, Evals, LangChain, LangGraph, OTel, Google ADK,
+  Strands). This captures the recent platform release window.

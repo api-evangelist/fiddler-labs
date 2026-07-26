@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.fiddler.ai/changelog/product-releases
+versioning:
+  api:
+    scheme: uri-path + api_version field
+    current: v3
+    api_version_field: '3.0'
+  platform:
+    scheme: date-based YY.WW (year.week)
+    current: '26.14'
+    docs: https://docs.fiddler.ai/changelog/product-releases
+deprecation:
+  policy: >-
+    Deprecations are announced in the dated product release notes and per-SDK
+    changelogs, with migration guidance and, typically, a replacement API before
+    removal.
+  docs: https://docs.fiddler.ai/changelog
+  examples:
+  - '26.11: Model.publish() deprecated in favor of Model.publish_stream() / Model.publish_batch()'
+  - '26.3: DSPy-style prompt specifications deprecated; migrate to CustomJudge Prompt Template'
+  - '25.20/25.21: Custom LLM Classifier and Toxicity enrichments deprecated in favor of LLM-as-a-Judge evaluators'
+sla:
+  uptime_target: null
+  note: >-
+    SOC 2 Type II covers availability; no public numeric uptime SLA or status
+    page was found. Contractual SLAs are enterprise/agreement-specific.
+status_page: null
+compatibility_matrix: https://docs.fiddler.ai/changelog/compatibility-matrix
+deprecated_operations: []
+notes: >-
+  No OpenAPI spec is published, so deprecated operations cannot be derived from a
+  spec; deprecations are tracked in the release notes above. No public status
+  page (status.fiddler.ai does not resolve) as of this pass.

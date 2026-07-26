@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://pypi.org/project/fiddler-client/
+packages:
+- language: python
+  registry: pypi
+  name: fiddler-client
+  import_name: fiddler
+  url: https://pypi.org/project/fiddler-client/
+  install: pip install fiddler-client
+  version: 3.13.0
+  license: Apache-2.0
+  official: true
+  description: >-
+    The official Python client for Fiddler, the enterprise AI Observability and
+    Security platform. Onboards ML models, LLM and GenAI applications, and AI
+    agents; publishes production data; and manages monitoring, custom metrics,
+    segments, alerts, and guardrails. Imported as `import fiddler as fdl`.
+    Requires Python >= 3.10.
+notes: >-
+  Fiddler ships additional first-party framework instrumentation packages
+  documented in its changelog (Evals SDK, LangChain SDK, LangGraph SDK,
+  OpenTelemetry SDK, Google ADK SDK, Strands Agent SDK). These are Python-based
+  and released alongside the platform; fiddler-client is the primary client
+  library. No first-party JavaScript, Java, Go, Ruby, or .NET client libraries
+  were found in the public registries as of this pass.
