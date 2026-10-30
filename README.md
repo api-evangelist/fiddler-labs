@@ -64,6 +64,116 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Fiddler Labs is a company surfaced as a portfolio company of bloomberg-beta and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Fiddler Labs (Fiddler AI) is an enterprise AI Observability and Security platform that provides unified visibility, context, and control across AI agents, LLM and GenAI applications, and traditional ML models. The Fiddler platform delivers standardized telemetry, evaluation, continuous monitoring, real-time guardrails, and auditable governance from development through production. Developers integrate through a REST API (v3), an official Python client (fiddler-client), framework SDKs (LangChain, LangGraph, OpenTelemetry, Google ADK, Strands, Evals), and a hosted Model Context Protocol (MCP) server that exposes GenAI observability data to AI assistants. Capabilities include model and application onboarding, production event ingestion, drift and integrity detection, custom metrics, segments, alerting, explainability, LLM gateway routing, and trace/span-level agentic observability.
 
-Backed by: bloomberg-beta — https://www.fiddler.ai/
+**Areas:** Company · AI Observability · ML Monitoring · LLM Observability · AI Agents · AI Security · AI Governance · Model Monitoring · Explainability · Guardrails
+
+## Fiddler Labs on APIs.io
+
+Everything profiled for Fiddler Labs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/fiddler-labs/](https://apis.io/providers/fiddler-labs/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Fiddler REST API](https://apis.io/apis/fiddler-labs/fiddler-rest-api/) — The Fiddler REST API (v3) is organized around resource-oriented URLs with JSON request/response bodies, Bearer-token authentication, and standard HTTP verbs…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Fiddler Labs Webhooks](https://apis.io/asyncapis/fiddler-labs/fiddler-labs-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [fiddler-genai](https://apis.io/servers/fiddler-labs/fiddler-genai/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Fiddler Labs Authentication](https://apis.io/security/fiddler-labs/fiddler-labs-authentication/)
+- [Fiddler Labs Domain Security](https://apis.io/security/fiddler-labs/fiddler-labs-domain-security/)
+- [Fiddler Labs Trust Center](https://apis.io/security/fiddler-labs/fiddler-labs-trust-center/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Fiddler Labs Rate Limits](https://apis.io/rate-limits/fiddler-labs/fiddler-labs-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.fiddler.ai/)
+- [Documentation](https://docs.fiddler.ai/)
+- [Getting started](https://docs.fiddler.ai/first-steps/getting-started-with-agentic-monitoring)
+- [API reference](https://docs.fiddler.ai/api)
+- [Pricing](https://www.fiddler.ai/pricing)
+- [Sign up](https://www.fiddler.ai/trial)
+- [Blog](https://www.fiddler.ai/blog)
+- [Security](https://www.fiddler.ai/security)
+- [Compliance](https://www.fiddler.ai/security)
+- [Terms of service](https://www.fiddler.ai/terms-of-service)
+- [Privacy policy](https://www.fiddler.ai/privacy-policy)
+- [GitHub](https://github.com/fiddler-labs)
+
+## API Evangelist rating
+
+**Kin Score 54.9** — strong · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 65.8 |
+| Developer ergonomics | 66.7 |
+| Access clarity | 60.5 |
+
+**Agent readiness 28.6** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/fiddler-labs/](https://apis.io/providers/fiddler-labs/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Fiddler Labs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/fiddler-labs/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
